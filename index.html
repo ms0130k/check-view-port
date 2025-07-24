@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Viewport Width Checker</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 2rem;
+      background: #f9f9f9;
+    }
+    .result {
+      font-size: 2rem;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <h1>📱 Viewport Width 검사</h1>
+  <p class="result">측정 중...</p>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const width = window.innerWidth;
+      console.log("viewport width:", width);
+      document.querySelector(".result").textContent = `viewport width: ${width}px`;
+    });
+  </script>
+</body>
+</html>
